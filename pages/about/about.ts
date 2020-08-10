@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController, LoadingController } from 'ionic-angular';
+import { Component,OnInit } from '@angular/core';
+import { NavController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 
 @Component({
@@ -7,20 +7,19 @@ import { HomePage } from '../home/home';
   styleUrls: ["about.css"],
   templateUrl: 'about.html'
 })
-export class AboutPage {
+export class AboutPage implements OnInit{
 
-  constructor(public navCtrl: NavController, public loadingController:LoadingController) {
+  constructor(public navCtrl: NavController) {
 
   }
 
-async backToHome() {
+  ngOnInit():void {
+    const i = this;
+    setTimeout(function () {
+   i.navCtrl.push(HomePage);
+}, 3000);
 
-  const loading = await this.loadingController.create({
-      duration: 1000
-    });
-    await loading.present();
+  }
 
-  this.navCtrl.push(HomePage);
-}
 
 }

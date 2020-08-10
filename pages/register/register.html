@@ -6,15 +6,23 @@
 	</ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="pin-bg">
 
 	<ion-list color="dark" padding>
 		<ion-list-header>
 			<ion-label>
 				<h3>Register Your Account</h3>
-        <p>Register with you email and employee id to clock in and out of the system.  You will receive an email with the pin code.</p>
+				<p>Register with you email and employee id to clock in and out of the system. You will receive an email
+					with the pin code.</p>
 			</ion-label>
 		</ion-list-header>
+		<ion-item>
+			<ion-label floating>Site</ion-label>
+			<ion-select>
+				<ion-option value="f">Mico ALBANY</ion-option>
+				<ion-option value="m">Mico ASHBURTON</ion-option>
+			</ion-select>
+		</ion-item>
 		<ion-item>
 			<ion-label floating>Email</ion-label>
 			<ion-input name="name" type="email" placeholder="" required></ion-input>
@@ -23,13 +31,13 @@
 			<ion-label floating>Employee Id</ion-label>
 			<ion-input name="name" type="email"></ion-input>
 		</ion-item>
-    <ion-item>
-      <button ion-button block color="medium">Register</button>
-    </ion-item>
+		<ion-item>
+			<button ion-button block color="medium">Register</button>
+		</ion-item>
 	</ion-list>
 
 
-<br><br>
+	<br><br>
 
 
 	<ion-list color="primary" padding>
@@ -44,10 +52,10 @@
 			<ion-label floating>Email</ion-label>
 			<ion-input name="name" type="email" placeholder="" required></ion-input>
 		</ion-item>
-    <ion-item>
-<button ion-button block color="danger">Recover Pin Code</button>
-    </ion-item>
+		<ion-item>
+			<button ion-button block color="danger">Recover Pin Code</button>
+		</ion-item>
 
-		
+
 	</ion-list>
 </ion-content>

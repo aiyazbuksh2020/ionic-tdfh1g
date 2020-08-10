@@ -23,12 +23,6 @@ export class PincodeComponent implements OnInit {
 
   async completeInput(){
 
-     const loading = await this.loadingController.create({
-      cssClass: 'my-custom-class',
-      duration: 1000
-    });
-    await loading.present();
-
     this.pinCodeCompleted.emit(true);
   }
 

@@ -1,5 +1,39 @@
+
+
+/*
 h3 {
-  color:black;
+  color:#09b6bd;
   font-weight:bold;
   font-size:20px;
+  text-transform: uppercase;
 }
+
+@import url('https://www.mico.co.nz/Content/fonts/font-icons/mico/fonts/font-icons.woff2?v=fv4vHXxAcJE2pH7Yx%2Fwd7Q%3D%3D');
+
+@import url('https://www.mico.co.nz/content/css/style.E-a7_g.css');
+
+
+ .site-name
+ {
+color:black;
+font-weight: bold;
+ }
+ 
+p {color:white;}
+
+.pin-bg
+{
+ 
+
+    background-color:#303030;
+}
+
+
+.item-md, .list-ios ion-item-sliding {
+     background-color: none!important;
+     color:white;
+    
+     font-weight:bold;
+}
+
+*/
