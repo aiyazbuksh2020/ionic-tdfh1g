@@ -6,8 +6,10 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+
 import { TabsPage } from '../pages/tabs/tabs';
 import { PincodeComponent } from './components/pincode/pincode.component';
+import { RegisterPage } from '../pages/register/register';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { PincodeComponent } from './components/pincode/pincode.component';
     ContactPage,
     HomePage,
     TabsPage,
+    RegisterPage,
     PincodeComponent
   ],
   imports: [
@@ -29,7 +32,8 @@ import { PincodeComponent } from './components/pincode/pincode.component';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    RegisterPage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler}
