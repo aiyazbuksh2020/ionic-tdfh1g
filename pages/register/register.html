@@ -1,22 +1,53 @@
 <ion-header>
 	<ion-navbar>
 		<ion-title>
-			User Registration
+			User Profile
 		</ion-title>
 	</ion-navbar>
 </ion-header>
 
 <ion-content>
-	<ion-list>
-		<ion-item>
-			<ion-input name="name" type="email" placeholder="Enter your email" required></ion-input>
-		</ion-item>
-    	<ion-item>
-			<ion-input name="name" type="email" placeholder="Enter your employee id" required></ion-input>
-		</ion-item>
-    	<ion-item>
-		<button ion-button color="secondary" block color="primary">Register</button>
-		</ion-item>
 
+	<ion-list color="dark" padding>
+		<ion-list-header>
+			<ion-label>
+				<h3>Register Your Account</h3>
+        <p>Register with you email and employee id to clock in and out of the system.  You will receive an email with the pin code.</p>
+			</ion-label>
+		</ion-list-header>
+		<ion-item>
+			<ion-label floating>Email</ion-label>
+			<ion-input name="name" type="email" placeholder="" required></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Employee Id</ion-label>
+			<ion-input name="name" type="email"></ion-input>
+		</ion-item>
+    <ion-item>
+      <button ion-button block color="medium">Register</button>
+    </ion-item>
+	</ion-list>
+
+
+<br><br>
+
+
+	<ion-list color="primary" padding>
+		<ion-list-header>
+			<ion-label>
+				<h3>Recover Your Pin Code</h3>
+				<p>Please enter your email address or employee id to recover you pin code.</p>
+
+			</ion-label>
+		</ion-list-header>
+		<ion-item>
+			<ion-label floating>Email</ion-label>
+			<ion-input name="name" type="email" placeholder="" required></ion-input>
+		</ion-item>
+    <ion-item>
+<button ion-button block color="danger">Recover Pin Code</button>
+    </ion-item>
+
+		
 	</ion-list>
 </ion-content>
